@@ -605,12 +605,17 @@ configs:
     # -----END RSA PRIVATE KEY-----
   secret:
     createSecret: true
+
+    # Webhook Configs
     githubSecret: ""
     gitlabSecret: ""
-    bitbucketSecret: ""
-#   argocdServerTlsConfig:
-#     key:
-#     crt:
+    bitbucketServerSecret: ""
+    bitbucketUUÌD: ""
+    gogsSecret: ""
+
+    # argocdServerTlsConfig:
+    #   key:
+    #   crt:
     # Argo expects the password in the secret to be bcrypt hashed. You can create this hash with
     # `htpasswd -nbBC 10 "" $ARGO_PWD | tr -d ':\n' | sed 's/$2y/$2a/'`
-#   argocdServerAdminPassword:
+    #   argocdServerAdminPassword:
